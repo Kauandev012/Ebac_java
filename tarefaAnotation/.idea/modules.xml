@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tarefaAnotation.iml" filepath="$PROJECT_DIR$/tarefaAnotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tarefaReflection.iml" filepath="$PROJECT_DIR$/tarefaReflection.iml" />
     </modules>
   </component>
 </project>
