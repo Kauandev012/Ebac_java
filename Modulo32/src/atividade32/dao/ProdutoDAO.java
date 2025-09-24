@@ -1,7 +1,9 @@
-package main.dao;
+package atividade32.dao;
 
-import main.domain.Produto;
+import atividade32.domain.Produto;
 import javax.persistence.*;
+
+import static javax.persistence.Persistence.createEntityManagerFactory;
 
 public class ProdutoDAO implements IProdutoDAO {
 
@@ -9,7 +11,7 @@ public class ProdutoDAO implements IProdutoDAO {
     public Produto cadastrar(Produto produto) {
 
         EntityManagerFactory entityManagerFactory =
-                Persistence.createEntityManagerFactory("ExemploJPA");
+                createEntityManagerFactory("atividadeJPA");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
         entityManager.getTransaction().begin();

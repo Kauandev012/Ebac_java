@@ -1,4 +1,4 @@
-package main.domain;
+package atividade32.domain;
 
 import org.hibernate.annotations.GenericGenerator;
 

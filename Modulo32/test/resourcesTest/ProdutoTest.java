@@ -1,8 +1,8 @@
 package resourcesTest;
 
-import main.dao.IProdutoDAO;
-import main.dao.ProdutoDAO;
-import main.domain.Produto;
+import atividade32.dao.IProdutoDAO;
+import atividade32.dao.ProdutoDAO;
+import atividade32.domain.Produto;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
