@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaPluginProjectSettings" isShowLibraryClassesInOrmView="true" />
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="Modulo32" name="ExemploJPA" framework="JPA" ormUnit="Modulo32:ExemploJPA" />
+    </persistence-units>
+  </component>
+</project>
