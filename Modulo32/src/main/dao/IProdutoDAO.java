@@ -1,6 +1,6 @@
-package atividade32.dao;
+package main.dao;
 
-import atividade32.domain.Produto;
+import main.domain.Produto;
 
 public interface IProdutoDAO {
 
