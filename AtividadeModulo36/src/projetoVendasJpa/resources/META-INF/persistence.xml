@@ -66,7 +66,7 @@
     <properties>
         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" /> <!-- DB Driver -->
         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/atividademod36 " /> <!-- BD Mane -->
-        <property name="javax.persistence.jdbc.user" value="MySQL81" /> <!-- DB User -->
+        <property name="javax.persistence.jdbc.user" value="root" /> <!-- DB User -->
         <property name="javax.persistence.jdbc.password" value="devk1807" /> <!-- DB Password -->
 
         <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/> <!-- DB Dialect -->

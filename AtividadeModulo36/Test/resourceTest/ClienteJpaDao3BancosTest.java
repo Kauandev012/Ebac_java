@@ -48,6 +48,7 @@ public class ClienteJpaDao3BancosTest {
             try {
                 clienteDao.excluir(cli);
             } catch (DAOException e) {
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });
@@ -58,6 +59,7 @@ public class ClienteJpaDao3BancosTest {
             try {
                 clienteDB3Dao.excluir(cli);
             } catch (DAOException e) {
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });
@@ -153,6 +155,7 @@ public class ClienteJpaDao3BancosTest {
             try {
                 clienteDao.excluir(cli);
             } catch (DAOException e) {
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         });
