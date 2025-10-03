@@ -1,0 +1,40 @@
+package atividadem38.service;
+
+import atividadem38.dao.IClienteDAO;
+import atividadem38.domain.Cliente;
+import atividadem38.exceptions.DAOException;
+import atividadem38.exceptions.MaisDeUmRegistroException;
+import atividadem38.exceptions.TableException;
+import atividadem38.services.generic.GenericService;
+
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+import java.util.List;
+
+@Stateless
+public class ProdutoService extends GenericService<Cliente, Long> implements IClienteService {
+
+    private IClienteDAO clienteDAO;
+
+    @Inject
+    public ClienteService(IClienteDAO clienteDAO) {
+        super(clienteDAO);
+        this.clienteDAO = clienteDAO;
+    }
+
+    @Override
+    public Cliente buscarPorCPF(Long cpf) throws DAOException {
+        try {
+            return this.dao.consultar(cpf);
+        } catch (MaisDeUmRegistroException | TableException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public List<Cliente> filtrarClientes(String query) {
+        return clienteDAO.filtrarClientes(query);
+    }
+}
