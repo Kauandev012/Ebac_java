@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.atividademod42.domain.Cliente;
+import com.atividademod42.usercas.AlteraCliente;
 import com.atividademod42.usercas.BuscaCliente;
 import com.atividademod42.usercas.CadastroCliente;
 
@@ -26,12 +27,14 @@ public class ClienteResource {
 
 	private BuscaCliente buscaCliente;
 	private CadastroCliente cadastroCliente;
+	private AlteraCliente  alteraCliente;
 	
 	@Autowired
 	public ClienteResource(BuscaCliente buscaCliente, 
-			CadastroCliente cadastroCliente) {
+			CadastroCliente cadastroCliente,AlteraCliente  alteraCliente) {
 		this.buscaCliente = buscaCliente;
 		this.cadastroCliente = cadastroCliente;
+		this.alteraCliente = alteraCliente;
 	}
 	
 	@GetMapping
