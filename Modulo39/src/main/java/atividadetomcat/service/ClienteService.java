@@ -1,7 +1,6 @@
 package atividadetomcat.service;
 
 import java.util.List;
-
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
@@ -10,7 +9,8 @@ import atividadetomcat.domain.Cliente;
 import atividadetomcat.exceptions.DAOException;
 import atividadetomcat.exceptions.MaisDeUmRegistroException;
 import atividadetomcat.exceptions.TableException;
-import atividadetomcat.servives.generic.GenericService;
+import atividadetomcat.services.generic.GenericService;
+
 
 @Stateless
 public class ClienteService extends GenericService<Cliente, Long> implements IClienteService{

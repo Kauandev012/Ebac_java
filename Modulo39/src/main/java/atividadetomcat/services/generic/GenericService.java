@@ -1,4 +1,4 @@
-package atividadetomcat.servives.generic;
+package atividadetomcat.services.generic;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -10,9 +10,9 @@ import atividadetomcat.exceptions.MaisDeUmRegistroException;
 import atividadetomcat.exceptions.TableException;
 import atividadetomcat.exceptions.TipoChaveNaoEncontradaException;
 
-public abstract class GenericService <T extends Persistence, E extends Serializable> 
-implements IGenericService<T, E> {
-	
+public class GenericService<T extends Persistence, E extends Serializable> 
+implements IGenericService<T, E>   {
+
 protected IGenericDAO<T, E> dao;
 	
 	public GenericService(IGenericDAO<T, E> dao) {

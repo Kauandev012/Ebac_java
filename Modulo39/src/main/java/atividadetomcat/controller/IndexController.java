@@ -14,13 +14,5 @@ public class IndexController implements Serializable {
 	public String redirectCliente() {
 		return "/cliente/list.xhtml";
 	}
-	
-	public String redirectProduto() {
-		return "/produto/list.xhtml";
-	}
-	
-	public String redirectVenda() {
-		return "/venda/list.xhtml";
-	}
-	
+		
 }

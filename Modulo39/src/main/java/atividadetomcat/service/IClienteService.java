@@ -2,9 +2,11 @@ package atividadetomcat.service;
 
 import java.util.List;
 
+
 import atividadetomcat.domain.Cliente;
 import atividadetomcat.exceptions.DAOException;
-import atividadetomcat.servives.generic.IGenericService;
+import atividadetomcat.services.generic.IGenericService;
+
 
 
 public interface IClienteService extends IGenericService<Cliente, Long> {
